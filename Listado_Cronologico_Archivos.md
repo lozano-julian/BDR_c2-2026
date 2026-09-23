@@ -175,22 +175,45 @@ Este documento detalla el contenido visto en cada clase, los temas abordados y e
 * `FN_Practica1.pdf`  
   * **Track:** **Track 2** (Diseño de BD Relacionales: normalización)  
   * **Tema:** Taller #7: Guía de ejercicios prácticos para normalizar esquemas de datos desde tablas desnormalizadas hasta 3FN.
+* `009 - Taller #8 - Visuals - De Algebra Relacional a SQL.pdf`  
+  * **Track:** **Track 3** (Lenguajes relacionales: pensar en Álgebra Relacional, escribir en SQL)  
+  * **Tema:** Presentación visual oficial de la cátedra para el Taller #8: Correspondencia formal y sintáctica entre operadores del Álgebra Relacional y SQL (DDL, DML, proyecciones, selecciones, joins, divisiones y agregaciones).
+* `Ticket de Salida Taller #5.md`  
+  * **Track:** **Track 3** (Lenguajes relacionales: Álgebra Relacional)  
+  * **Tema:** Resolución comentada y justificación formal de 4 ejercicios de Álgebra Relacional (división relacional para clientes que compraron todo con facturas pagadas, agregación con `COUNT_DISTINCT` sobre facturas, selecciones compuestas sobre morosos y resta de conjuntos).
+* `Ticket Salida Taller #8.md`  
+  * **Track:** **Track 3** (Lenguajes relacionales: escribir en SQL)  
+  * **Tema:** Cuestionario evaluativo / ticket de salida del Taller #8 sobre consultas SQL con condiciones de igualdad entre código y descripción.
 
 ---
 
 ### Clase 7 (22/09)
 **Temas vistos / preparación:**
-* Preparación para la Sesión Fishbowl #3 (Transacciones Distribuidas y Deadlocks).
-* Taller #8: Consultas SQL (DML con `SELECT`).
-* Taller #9: Modelado y Normalización #2.
+* Sesión Fishbowl #3 (Transacciones Distribuidas, Modelo XA, 2PC vs. 3PC y Deadlocks).
+* Taller #10: SQL #2 — "Proveedores – Partes – Catálogo" (Álgebra Relacional y SQL: consultas unarias, filtros por color, intersecciones, división relacional por doble `NOT EXISTS`, auto-joins comparativos sobre la misma tabla y agregaciones con `HAVING`).
+* Taller #9: Revisión de la **Práctica 1 de Normalización** y resolución de la nueva **Práctica 2 de Normalización (FN)** (casos reales de reducción a 3FN y posterior reconstrucción del DER).
 
 **Archivos en la carpeta `Clase 7_09-22`:**
+* `011 - Taller #10 - SQL 2.pdf`  
+  * **Track:** **Track 3** (Lenguajes relacionales: pensar en Álgebra Relacional, escribir en SQL)  
+  * **Tema:** Diapositivas oficiales del Taller #10 de SQL dictado por la cátedra (Ricardo Di Pasquale, Alejandro Isidro, Edgardo Sanchez, Delfina Las Heras). Modelo relacional y DER de Proveedores, Partes y Catálogo, con consignas prácticas de consulta a – q.
+* `FN - Practica 2.pdf`  
+  * **Track:** **Track 2** (Diseño de BD Relacionales: modelado y normalización)  
+  * **Tema:** Guía de ejercitación práctica del Taller #9 con 3 casos de estudio para normalizar tablas desnormalizadas a 3FN y graficar posteriormente su modelo DER: Carreras de Caballos, Habitaciones de Hotel y Empresa Farmacéutica/Lotes con inflación.
+
+**Archivos en la subcarpeta `Clase 7_09-22/fishbowl 3`:**
 * `005 - Sesión Fishbowl #3 - Resumen de Transacciones Distribuidas.pdf`  
   * **Track:** **Track 4** (Seguridad, Transacciones y Concurrencia)  
   * **Tema:** Apunte preparatorio para Fishbowl #3: problemática de transacciones en múltiples nodos, protocolo Two-Phase Commit (2PC) y consistencia distribuida.
 * `006 - Sesión Fishbowl #3 - MindMap de Transacciones y Transacciones Distribuidas.png`  
   * **Track:** **Track 4** (Seguridad, Transacciones y Concurrencia)  
   * **Tema:** Mapa mental comparativo entre transacciones locales y transacciones distribuidas.
+* `Resumen_Fishbowl_3_Transacciones_Distribuidas.md`  
+  * **Track:** **Track 4** (Seguridad, Transacciones y Concurrencia)  
+  * **Tema:** Guía maestra exhaustiva de preparación para el Fishbowl #3 con desarrollo teórico, diagramas de estados 2PC/3PC, análisis de fallos y preguntas típicas de debate.
+* `Notas Fishbowl #3 (tomadas durante el fisbowl).pdf`  
+  * **Track:** **Track 4** (Seguridad, Transacciones y Concurrencia)  
+  * **Tema:** Anotaciones tomadas en vivo durante la dinámica de debate del Fishbowl #3 (schedules, locks, deadlocks, 2PC, 3PC y casos reales).
 * `Deadlocks_en_bases_de_datos.png`  
   * **Track:** **Track 4** (Seguridad, Transacciones y Concurrencia)  
   * **Tema:** Infografía visual sobre interbloqueos (*deadlocks*): condiciones de ocurrencia, grafos de espera (*wait-for graph*) y técnicas de prevención y detección.
