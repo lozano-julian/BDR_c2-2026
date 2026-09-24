@@ -137,7 +137,7 @@ El DBMS accede únicamente a las filas con bit $1$ (RIDs 1, 4, 5 y 6) con mínim
 > * **Clase 3:** Modelo Relacional y Entidad-Relación (Teórica) / Taller #2 (Modelado DER)
 > * **Clase 4:** Introducción a la Normalización (Taller #3)
 > * **Clases 5 y 6:** Modelado y Normalización #1 y #2 (Taller #7 — Práctica 1)
-> * **Clase 7 (22/09):** Taller #9 — Revisión de **Práctica 1** y presentación de **Práctica 2** (`FN - Practica 2.pdf`).
+> * **Clase 7 (22/09):** Taller #9 — Revisión de **Práctica 1**, presentación de **Práctica 2** (`FN - Practica 2.pdf`) y evaluación del Ticket de Salida (`Ticket de Salida Taller #9 - FN 2.md`).
 
 ---
 
@@ -256,13 +256,25 @@ $$\underline{\text{CARRERA\_CABALLO}}(\mathbf{\underline{Codigo\_carrera}}, \mat
 
 ---
 
+### 3. Normalización vs. Desnormalización y Trade-Offs de Rendimiento
+A partir de los conceptos evaluados en el **Ticket de Salida del Taller #9 (FN 2)**, se destacan los criterios de ingeniería sobre el esquema:
+* **Beneficios de la Normalización (hasta 3FN):**
+  1. *Integridad y Consistencia:* Erradica las anomalías de actualización y eliminación. Si un dato cambia, se modifica en un único lugar.
+  2. *Optimización de Almacenamiento:* Elimina el desperdicio de bytes en disco generado por tuplas redundantes.
+* **El Concepto de Desnormalización:**
+  * Consiste en **introducir redundancia controlada de forma intencional y deliberada** en el esquema de tablas.
+  * **Objetivo de ingeniería:** Mejorar el tiempo de respuesta y el *throughput* en **consultas de lectura frecuentes y de alto volumen**, evitando operaciones intensivas de `JOIN` entre tablas muy fragmentadas.
+  * **Trade-off:** Beneficia las lecturas (`SELECT`), pero penaliza las escrituras (`INSERT`, `UPDATE`, `DELETE`) e incrementa el riesgo de inconsistencias si no se sincronizan rigurosamente los datos duplicados.
+
+---
+
 ## 💻 **Track 3: Lenguajes relacionales: pensar en Álgebra Relacional, escribir en SQL**
 
 > 📅 **Ruta de aprendizaje cursada:**
 > * **Clase 4:** Introducción al Álgebra Relacional (Taller #4)
 > * **Clase 5:** Álgebra Relacional Avanzada (Taller #5) / SQL: DDL y DML (Taller #6)
-> * **Clase 6:** Resolución y análisis conceptual de Álgebra Relacional (`Ticket de Salida Taller #5.md`)
-> * **Clase 7 (22/09):** **Taller #10 (SQL #2)** — Práctica intensiva de Álgebra Relacional a SQL sobre el modelo canónico **Proveedores – Partes – Catálogo** (`011 - Taller #10 - SQL 2.pdf`).
+> * **Clase 6 (15/09):** **Taller #8 (SQL #1)** — "Del Álgebra Relacional al SQL" (`009 - Taller #8 - Visuals - De Algebra Relacional a SQL.pdf` y `Ticket Salida Taller #8.md`) / Ticket de Salida Taller #5
+> * **Clase 7 (22/09):** **Taller #10 (SQL #2)** — Práctica intensiva de Álgebra Relacional a SQL sobre el modelo canónico **Proveedores – Partes – Catálogo** (`011 - Taller #10 - SQL 2.pdf` y evaluación del `Ticket de Salida Taller #10 - SQL 2.md`).
 
 ---
 
@@ -654,6 +666,8 @@ Supongamos la siguiente cronología en el Log:
 ### 📁 [Clase 7_09-22](file:///c:/Users/user2/OneDrive/Documents/02_UCA/BDR/Clase%207_09-22) (Track 2, Track 3 y Track 4)
 * `011 - Taller #10 - SQL 2.pdf` (Track 3 — Presentación oficial del Taller de SQL #2: Proveedores – Partes – Catálogo, consignas a – q).
 * `FN - Practica 2.pdf` (Track 2 — Guía de ejercitación de Normalización a 3FN y reconstrucción del DER).
+* `Ticket de Salida Taller #9 - FN 2.md` (Track 2 — Evaluación calificada 10/10 sobre 1FN, 2FN, 3FN, dependencias transitivas y desnormalización intencional).
+* `Ticket de Salida Taller #10 - SQL 2.md` (Track 3 — Banco de 10 consultas SQL avanzadas resueltas sobre Proveedores, Partes y Catálogo con EXISTS, NOT EXISTS, agregaciones y LEFT JOIN).
 * Subcarpeta `fishbowl 3/`:
   * `005 - Sesión Fishbowl #3 - Resumen de Transacciones Distribuidas.pdf`
   * `006 - Sesión Fishbowl #3 - MindMap de Transacciones y Transacciones Distribuidas.png`

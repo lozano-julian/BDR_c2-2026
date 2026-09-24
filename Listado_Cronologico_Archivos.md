@@ -158,6 +158,7 @@ Este documento detalla el contenido visto en cada clase, los temas abordados y e
 * Teoría de Transacciones (Propiedades ACID).
 * Mecanismos de Concurrencia y Recuperación ante fallos.
 * Taller #7: Modelado y Normalización #2 (Formas Normales 1FN, 2FN, 3FN).
+* Taller #8: Introducción a SQL ("Del Álgebra Relacional al SQL" — equivalencias de operadores, joins, cociente y agregaciones).
 
 **Archivos en la carpeta `Clase 6_09-15`:**
 * `Apunte 6 - Transacciones y concurrencia (1).pdf`  
@@ -192,6 +193,7 @@ Este documento detalla el contenido visto en cada clase, los temas abordados y e
 * Sesión Fishbowl #3 (Transacciones Distribuidas, Modelo XA, 2PC vs. 3PC y Deadlocks).
 * Taller #10: SQL #2 — "Proveedores – Partes – Catálogo" (Álgebra Relacional y SQL: consultas unarias, filtros por color, intersecciones, división relacional por doble `NOT EXISTS`, auto-joins comparativos sobre la misma tabla y agregaciones con `HAVING`).
 * Taller #9: Revisión de la **Práctica 1 de Normalización** y resolución de la nueva **Práctica 2 de Normalización (FN)** (casos reales de reducción a 3FN y posterior reconstrucción del DER).
+* Resolución y entrega de Tickets de Salida evaluativos: Taller #9 (FN 2 — 100%) y Taller #10 (SQL 2 — Proveedores, Partes y Catálogo).
 
 **Archivos en la carpeta `Clase 7_09-22`:**
 * `011 - Taller #10 - SQL 2.pdf`  
@@ -200,6 +202,12 @@ Este documento detalla el contenido visto en cada clase, los temas abordados y e
 * `FN - Practica 2.pdf`  
   * **Track:** **Track 2** (Diseño de BD Relacionales: modelado y normalización)  
   * **Tema:** Guía de ejercitación práctica del Taller #9 con 3 casos de estudio para normalizar tablas desnormalizadas a 3FN y graficar posteriormente su modelo DER: Carreras de Caballos, Habitaciones de Hotel y Empresa Farmacéutica/Lotes con inflación.
+* `Ticket de Salida Taller #9 - FN 2.md`  
+  * **Track:** **Track 2** (Diseño de BD Relacionales: modelado y normalización)  
+  * **Tema:** Cuestionario evaluativo / ticket de salida del Taller #9 con calificación perfecta (10/10 - 100%). Evaluación conceptual sobre condiciones de 1FN, 2FN y 3FN, detección de dependencias transitivas y parciales, consecuencias de no normalizar y fundamentación de la desnormalización como redundancia intencional controlada para optimizar consultas de lectura de alta frecuencia.
+* `Ticket de Salida Taller #10 - SQL 2.md`  
+  * **Track:** **Track 3** (Lenguajes relacionales: escribir en SQL)  
+  * **Tema:** Cuestionario evaluativo / ticket de salida del Taller #10 con banco de 10 consultas SQL complejas sobre el esquema `Proveedores – Partes – Catálogo`: productos estrictamente más caros sin empates ni monopolio (`EXISTS` / `NOT EXISTS`), selección simultánea de atributos multivalor con `HAVING COUNT(DISTINCT ...)`, preservación de proveedores sin catálogo mediante `LEFT JOIN`, y división relacional mediante doble `NOT EXISTS`.
 
 **Archivos en la subcarpeta `Clase 7_09-22/fishbowl 3`:**
 * `005 - Sesión Fishbowl #3 - Resumen de Transacciones Distribuidas.pdf`  

@@ -111,7 +111,8 @@
 | **21:30** | — | *Break* | Pausa | — |
 
 > 📌 **Actividad Asincrónica (3 hs):**  
-> Estudio del apunte. Ticket de Salida Clase teórica #5 y #6, Taller #7. Preparación Sesión Fishbowl #3 (Transacciones).
+> Estudio del apunte. Ticket de Salida Clase teórica #5 y #6, Taller #7. Preparación Sesión Fishbowl #3 (Transacciones).  
+> *(Nota de cursada real: Durante esta clase se incorporó también el **Taller #8 de SQL #1: Del Álgebra Relacional a SQL** con su respectivo ticket de salida).*
 
 ---
 
@@ -121,12 +122,13 @@
 | :---: | :---: | :---: | :--- | :--- |
 | **18:00** | Track 4 | Fishbowl | Sesión Fishbowl #3: Transacciones | — |
 | **19:15** | — | *Break* | Pausa (15 min) | — |
-| **19:30** | Track 3 | Práctica | Taller #8 SQL #1 | — |
-| **20:30** | Track 2 | Práctica | Taller #9 Modelado y Normalización #2 | — |
+| **19:30** | Track 3 | Práctica | Taller #10 SQL #2 (Proveedores, Partes y Catálogo) | — |
+| **20:30** | Track 2 | Práctica | Taller #9 Modelado y Normalización #2 (FN Prácticas 1 y 2) | — |
 | **21:30** | — | *Break* | Pausa | — |
 
 > 📌 **Actividad Asincrónica (3 hs):**  
-> Ticket de Salida Sesión Fishbowl #3, Taller #8 y #9. Preparación Sesión Fishbowl #4 (Concurrencia).
+> Ticket de Salida Sesión Fishbowl #3, Taller #9 (FN 2) y Taller #10 (SQL 2). Preparación Sesión Fishbowl #4 (Concurrencia).  
+> *(Nota de cursada real: El Taller #8 se dictó el 15/09 y en esta clase 7 se dictó el **Taller #10 de SQL #2** junto a la **Práctica 2 de Formas Normales - FN**).*
 
 ---
 
