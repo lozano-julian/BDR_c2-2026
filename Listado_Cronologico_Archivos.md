@@ -193,7 +193,7 @@ Este documento detalla el contenido visto en cada clase, los temas abordados y e
 * Sesión Fishbowl #3 (Transacciones Distribuidas, Modelo XA, 2PC vs. 3PC y Deadlocks).
 * Taller #10: SQL #2 — "Proveedores – Partes – Catálogo" (Álgebra Relacional y SQL: consultas unarias, filtros por color, intersecciones, división relacional por doble `NOT EXISTS`, auto-joins comparativos sobre la misma tabla y agregaciones con `HAVING`).
 * Taller #9: Revisión de la **Práctica 1 de Normalización** y resolución de la nueva **Práctica 2 de Normalización (FN)** (casos reales de reducción a 3FN y posterior reconstrucción del DER).
-* Resolución y entrega de Tickets de Salida evaluativos: Taller #9 (FN 2 — 100%) y Taller #10 (SQL 2 — Proveedores, Partes y Catálogo).
+* Resolución y entrega de Tickets de Salida evaluativos: Taller #9 (FN 2 — 100%), Taller #10 (SQL 2 — Proveedores, Partes y Catálogo) y Cuestionario de Recuperación (Fishbowl #3 / Teórica #4).
 
 **Archivos en la carpeta `Clase 7_09-22`:**
 * `011 - Taller #10 - SQL 2.pdf`  
@@ -208,6 +208,9 @@ Este documento detalla el contenido visto en cada clase, los temas abordados y e
 * `Ticket de Salida Taller #10 - SQL 2.md`  
   * **Track:** **Track 3** (Lenguajes relacionales: escribir en SQL)  
   * **Tema:** Cuestionario evaluativo / ticket de salida del Taller #10 con banco de 10 consultas SQL complejas sobre el esquema `Proveedores – Partes – Catálogo`: productos estrictamente más caros sin empates ni monopolio (`EXISTS` / `NOT EXISTS`), selección simultánea de atributos multivalor con `HAVING COUNT(DISTINCT ...)`, preservación de proveedores sin catálogo mediante `LEFT JOIN`, y división relacional mediante doble `NOT EXISTS`.
+* `Ticket de Salida Fishbowl #3.md`  
+  * **Track:** **Track 4** (Seguridad, Transacciones y Concurrencia)  
+  * **Tema:** Cuestionario evaluativo / ticket de salida de Clase Teórica #4 y Fishbowl #3 sobre Recuperación ante fallos: principio de escritura anticipada en log (*WAL - Write-Ahead Logging*) en actualización inmediata, clasificación de fallas catastróficas de disco/hardware que requieren intervención manual con backups físicos, y estrategia de restauración a un punto en el tiempo (*PITR / roll-forward*) combinando Backup Full + Backup Diferencial + Log Transaccional.
 
 **Archivos en la subcarpeta `Clase 7_09-22/fishbowl 3`:**
 * `005 - Sesión Fishbowl #3 - Resumen de Transacciones Distribuidas.pdf`  

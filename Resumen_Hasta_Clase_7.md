@@ -668,6 +668,7 @@ Supongamos la siguiente cronología en el Log:
 * `FN - Practica 2.pdf` (Track 2 — Guía de ejercitación de Normalización a 3FN y reconstrucción del DER).
 * `Ticket de Salida Taller #9 - FN 2.md` (Track 2 — Evaluación calificada 10/10 sobre 1FN, 2FN, 3FN, dependencias transitivas y desnormalización intencional).
 * `Ticket de Salida Taller #10 - SQL 2.md` (Track 3 — Banco de 10 consultas SQL avanzadas resueltas sobre Proveedores, Partes y Catálogo con EXISTS, NOT EXISTS, agregaciones y LEFT JOIN).
+* `Ticket de Salida Fishbowl #3.md` (Track 4 — Cuestionario evaluativo de Clase Teórica #4 / Fishbowl #3: Recuperación ante fallos, protocolo WAL, fallas catastróficas de disco y esquema de restauración PITR mediante Backup Full + Diferencial + Log Roll-forward).
 * Subcarpeta `fishbowl 3/`:
   * `005 - Sesión Fishbowl #3 - Resumen de Transacciones Distribuidas.pdf`
   * `006 - Sesión Fishbowl #3 - MindMap de Transacciones y Transacciones Distribuidas.png`
