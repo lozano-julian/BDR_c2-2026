@@ -1,0 +1,132 @@
+CREATE TABLE Proveedores (
+    pr_id   INTEGER      NOT NULL,
+    nombre  VARCHAR2(100) NOT NULL,
+    ciudad  VARCHAR2(100),
+
+    CONSTRAINT pk_proveedores
+        PRIMARY KEY (pr_id)
+);
+
+
+CREATE TABLE Partes (
+    pa_id   INTEGER       NOT NULL,
+    nombre  VARCHAR2(100) NOT NULL,
+    color   VARCHAR2(50),
+
+    CONSTRAINT pk_partes
+        PRIMARY KEY (pa_id)
+);
+
+
+CREATE TABLE Catalogo (
+    pr_id   INTEGER       NOT NULL,
+    pa_id   INTEGER       NOT NULL,
+    costo   NUMBER(12,2)  NOT NULL,
+
+    CONSTRAINT pk_catalogo
+        PRIMARY KEY (pr_id, pa_id),
+
+    CONSTRAINT fk_catalogo_proveedor
+        FOREIGN KEY (pr_id)
+        REFERENCES Proveedores (pr_id),
+
+    CONSTRAINT fk_catalogo_parte
+        FOREIGN KEY (pa_id)
+        REFERENCES Partes (pa_id)
+);
+
+
+
+-- =========================
+-- PROVEEDORES
+-- =========================
+
+INSERT INTO Proveedores (pr_id, nombre, ciudad)
+VALUES (1, 'Proveedor Norte', 'Buenos Aires');
+
+INSERT INTO Proveedores (pr_id, nombre, ciudad)
+VALUES (2, 'Industrial Sur', 'Rosario');
+
+INSERT INTO Proveedores (pr_id, nombre, ciudad)
+VALUES (3, 'Distribuidora Central', 'Córdoba');
+
+INSERT INTO Proveedores (pr_id, nombre, ciudad)
+VALUES (4, 'Suministros Delta', 'Buenos Aires');
+
+INSERT INTO Proveedores (pr_id, nombre, ciudad)
+VALUES (5, 'Proveedora Andina', 'Mendoza');
+
+
+-- =========================
+-- PARTES
+-- =========================
+
+INSERT INTO Partes (pa_id, nombre, color)
+VALUES (101, 'Tornillo', 'Gris');
+
+INSERT INTO Partes (pa_id, nombre, color)
+VALUES (102, 'Tuerca', 'Negro');
+
+INSERT INTO Partes (pa_id, nombre, color)
+VALUES (103, 'Arandela', 'Blanco');
+
+INSERT INTO Partes (pa_id, nombre, color)
+VALUES (104, 'Engranaje', 'Rojo');
+
+INSERT INTO Partes (pa_id, nombre, color)
+VALUES (105, 'Eje', 'Azul');
+
+INSERT INTO Partes (pa_id, nombre, color)
+VALUES (106, 'Rodamiento', 'Gris');
+
+
+-- =========================
+-- CATALOGO
+-- =========================
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (1, 101, 12.50);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (1, 102, 8.75);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (1, 104, 150.00);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (2, 101, 11.90);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (2, 103, 5.20);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (2, 105, 210.00);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (3, 102, 9.10);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (3, 104, 145.00);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (3, 106, 320.00);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (4, 101, 13.00);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (4, 103, 4.80);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (4, 104, 148.50);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (4, 105, 205.00);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (5, 102, 8.50);
+
+INSERT INTO Catalogo (pr_id, pa_id, costo)
+VALUES (5, 106, 310.00);
+
+
